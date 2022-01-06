@@ -1,0 +1,41 @@
+.footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    color:white;
+    background-color: #000C67;
+    background-image: url(../../resources/svg/wave.svg);
+    background-size: 100%;
+    background-position-y:65%;
+    height: 640px;
+    padding:20px;
+}
+
+.container {
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.title {
+    text-align: center;
+    font-size: 60px;
+    margin-bottom: 70px;
+}
+
+.btn-click {
+    background-color: #0B26F0;
+    border-radius: 15px;
+    height: 60px;
+    width:400px;
+    color: white;
+    font-size: 30px;
+    border-style: none;
+    cursor: pointer;
+}
+
+.derechos {
+    font-size: 40px;
+}
