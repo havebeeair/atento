@@ -1,0 +1,110 @@
+.CC-fulljobs {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    background-color: #e4e4e4;
+    padding: 20px;
+  }
+
+  .fulljobs-container {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 300px;
+    margin-bottom: 300px;
+  }
+
+  .fulljobs-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 400px;
+    height: 400px;
+    background-color: white;
+    margin: 15px;
+    border-radius: 15px;
+  }
+
+  .fj-img-card {
+    width: 400px;
+    height: 200px;
+    border-radius: 15px;
+    border: lightslategray 1px solid;
+  }
+
+  .text-card-container {
+    display: flex;
+    flex-direction: column;
+    padding: 15px;
+    margin-left: 10px;
+  }
+
+  .title-card-fj {
+    color: #4e4e4e;
+    font-size: 18px;
+    margin-top: 10px;
+  }
+
+  .city-card-fj {
+    color: #adadad;
+    font-size: 14px;
+    margin-top: 10px;
+  }
+
+  .type-card-fj {
+    color: #0b26f0;
+    font-size: 14px;
+    margin-top: 10px;
+  }
+
+  .btn-card-fj {
+    background-color: #0b26f0;
+    color: white;
+    font-size: 14px;
+    width: 335px;
+    height: 53px;
+    border: none;
+    border-radius: 30px;
+  }
+
+  @media screen and (max-width: 400px) {
+    .fulljobs-container {
+      margin-top: 90px;
+      margin-bottom: 90px;
+    }
+
+    .fulljobs-card {
+      width: 320px;
+      height: 320px;
+    }
+
+    .fj-img-card {
+      width: 320px;
+      height: 175px;
+    }
+
+    .text-card-container {
+      padding: 5px;
+      margin-left: 25px;
+    }
+
+    .title-card-fj {
+      font-size: 17px;
+      margin-top: 2px;
+    }
+
+    .city-card-fj {
+      font-size: 13px;
+      margin-top: 5px;
+    }
+
+    .type-card-fj {
+      font-size: 13px;
+      margin-top: 5px;
+    }
+
+    .btn-card-fj {
+      font-size: 14px;
+      width: 268px;
+      height: 42px;
+    }
+  }
