@@ -1,12 +1,6 @@
 /* CSS de componente Values */
 @import url("https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@700&display=swap");
 
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
 .values-container {
   width: 100%;
   padding: 52px 15px 52px 15px;

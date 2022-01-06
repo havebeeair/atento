@@ -1,6 +1,6 @@
 import React from "react";
 import "./values.css";
-import Hand from "./svg/hand.png";
+import Hand from "../../resources/svg/hand.png";
 
 function Values(props) {
   return (
