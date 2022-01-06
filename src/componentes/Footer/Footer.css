@@ -19,13 +19,13 @@
     align-items: center;
 }
 
-.title {
+.title-footer {
     text-align: center;
     font-size: 60px;
     margin-bottom: 70px;
 }
 
-.btn-click {
+.btn-click-footer {
     background-color: #0B26F0;
     border-radius: 15px;
     height: 60px;
@@ -36,6 +36,36 @@
     cursor: pointer;
 }
 
-.derechos {
+.derechos-footer {
     font-size: 40px;
+}
+
+@media screen and (max-width: 400px) {
+
+    .footer {
+        background-size: 300%;
+        background-position-y:70%;
+        background-position-x: 40%;
+        height: 500px;
+    }
+
+    .container {
+        margin-top: 30px;
+    }
+
+    .title-footer {
+        font-size: 25px;
+        margin-bottom: 20px;
+    }
+
+    .btn-click-footer {
+        border-radius: 30px;
+        height: 55px;
+        width:330px;
+        font-size: 25px;
+    }
+
+    .derechos-footer {
+        font-size: 15px;
+    }
 }
