@@ -1,12 +1,12 @@
-import ContactosCss from "./Contactos.css";
-import Mes from "./iconos/atobot.png";
-import Whatsapp from "./iconos/whatsapp.png";
-import Phone from "./iconos/phonenumber.png";
-import Facebook from "./iconos/facebook.png";
-import Twitter from "./iconos/twitter.png";
-import Instagram from "./iconos/instagram.png";
-import Tiktok from "./iconos/tik-tok.png";
-import Youtube from "./iconos/youtube.png";
+import "./Contact.css";
+import Mes from "../../resources/iconos/atobot.png";
+import Whatsapp from "../../resources/iconos/whatsapp.png";
+import Phone from "../../resources/iconos/phonenumber.png";
+import Facebook from "../../resources/iconos/facebook.png";
+import Twitter from "../../resources/iconos/twitter.png";
+import Instagram from "../../resources/iconos/instagram.png";
+import Tiktok from "../../resources/iconos/tik-tok.png";
+import Youtube from "../../resources/iconos/youtube.png";
 
 function Contactos() {
   return (
