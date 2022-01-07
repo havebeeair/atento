@@ -3,7 +3,7 @@
 
 .values-container {
   width: 100%;
-  padding: 52px 15px 52px 15px;
+  padding: 52px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -20,8 +20,9 @@
 
 .values-card-container {
   width: 100%;
+  padding: 0px 40px 0px 40px;
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
   flex-wrap: wrap;
   align-content: flex-start;
 }
@@ -29,7 +30,7 @@
 .values-card {
   width: 270px;
   height: 436px;
-  margin: 10px 0px 10px 0px;
+  margin: 10px 35px 10px 35px;
   padding: 35px 20px 35px 20px;
   display: flex;
   flex-direction: column;
@@ -72,6 +73,7 @@
 @media only screen and (max-width: 400px) {
   .values-container {
     padding: 40px 20px 40px 20px;
+    justify-content: space-between;
   }
 
   .values-title {
@@ -79,10 +81,14 @@
     font-size: 35px;
   }
 
+  .values-card-container {
+    padding: 0px;
+  }
+
   .values-card {
     width: 160px;
     height: 250px;
-    margin: 10px 0px 10px 0px;
+    margin: 10px 5px 10px 5px;
     padding: 20px 10px 20px 10px;
   }
 
