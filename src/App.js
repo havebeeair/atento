@@ -1,20 +1,16 @@
-import Header from "./componentes/Header/Header";
-import Values from "./componentes/Values/Values";
-import Jobs from "./componentes/Jobs/Jobs";
-import Contact from "./componentes/Contact/Contact";
-import Footer from "./componentes/Footer/Footer";
-import FullJobs from "./componentes/FullJobs/FullJobs";
+import Landing from "./componentes/Landing/Landing";
+import { Route, Routes, useLocation } from "react-router-dom";
+import FullJobs from "./componentes/FullJobs/FullJobs.jsx";
+
 import "./App.css";
 
 function App() {
   return (
     <>
-      <Header />
-      <Values />
-      <Jobs />
-      <Contact />
-      <Footer />
-      {/* <FullJobs /> */}
+      <Routes>
+        <Route element={<Landing />} path="/"></Route>
+        <Route element={<FullJobs />} exact path="/vacantes"></Route>
+      </Routes>
     </>
   );
 }

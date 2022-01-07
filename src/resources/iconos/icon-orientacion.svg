@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="70" height="70" viewBox="0 0 70 70">
+  <g id="icon-orientacion" transform="translate(-216.322 -907.678)">
+    <g id="Ellipse_54" data-name="Ellipse 54" transform="translate(216.322 907.678)" fill="none" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="3">
+      <circle cx="35" cy="35" r="35" stroke="none"/>
+      <circle cx="35" cy="35" r="33.5" fill="none"/>
+    </g>
+    <circle id="Ellipse_55" data-name="Ellipse 55" cx="4" cy="4" r="4" transform="translate(247.322 938.678)" fill="none" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="3"/>
+    <ellipse id="Ellipse_56" data-name="Ellipse 56" cx="3" cy="2.5" rx="3" ry="2.5" transform="translate(237.322 950.678)" fill="none" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="3"/>
+    <line id="Line_4" data-name="Line 4" y1="13.422" x2="13.422" transform="translate(254.298 926.135)" fill="none" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="3"/>
+    <line id="Line_5" data-name="Line 5" y1="4.352" x2="4.352" transform="translate(243.533 945.97)" fill="none" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="3"/>
+    <path id="Path_133" data-name="Path 133" d="M243.369,917.051l-3.023-3.024-3.023,3.024" transform="translate(10.746 3.037)" fill="none" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="3"/>
+    <path id="Path_134" data-name="Path 134" d="M237.322,946.027l3.023,3.023,3.023-3.023" transform="translate(10.746 19.412)" fill="none" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="3"/>
+    <path id="Path_135" data-name="Path 135" d="M254.322,935.074l3.023-3.023-3.023-3.023" transform="translate(19.445 10.713)" fill="none" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="3"/>
+    <path id="Path_136" data-name="Path 136" d="M225.346,929.027l-3.023,3.023,3.023,3.023" transform="translate(3.07 10.713)" fill="none" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="3"/>
+  </g>
+</svg>

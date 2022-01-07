@@ -1,71 +1,80 @@
 .footer {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-    color:white;
-    background-color: #000C67;
-    background-image: url(../../resources/svg/wave.svg);
-    background-size: 100%;
-    background-position-y:65%;
-    height: 640px;
-    padding:20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  color: white;
+  background-color: #000c67;
+  background-image: url(../../resources/svg/wave.svg);
+  background-size: 100%;
+  background-position-y: 65%;
+  height: 640px;
+  padding: 20px;
 }
 
 .container {
-    display:flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .title-footer {
-    text-align: center;
-    font-size: 60px;
-    margin-bottom: 70px;
+  text-align: center;
+  font-size: 60px;
+  margin-bottom: 70px;
 }
 
 .btn-click-footer {
-    background-color: #0B26F0;
-    border-radius: 15px;
-    height: 60px;
-    width:400px;
-    color: white;
-    font-size: 30px;
-    border-style: none;
-    cursor: pointer;
+  background-color: #0b26f0;
+  border-radius: 15px;
+  height: 60px;
+  width: 400px;
+  color: white;
+  font-size: 30px;
+  border-style: none;
+  cursor: pointer;
 }
 
-.derechos-footer {
-    font-size: 40px;
+.derechos-footer h2 {
+  font-size: 20px;
+  font-weight: 300;
+  color: white;
+  text-decoration: none;
 }
 
-@media screen and (max-width: 400px) {
+a.derechos-footer h2:hover,
+a.derechos-footer h2:active {
+  color: white;
+  text-decoration: none;
+}
 
-    .footer {
-        background-size: 300%;
-        background-position-y:70%;
-        background-position-x: 40%;
-        height: 500px;
-    }
+@media screen and (max-width: 450px) {
+  .footer {
+    background-size: 300%;
+    background-position-y: 70%;
+    background-position-x: 40%;
+    height: 500px;
+  }
 
-    .container {
-        margin-top: 30px;
-    }
+  .container {
+    margin-top: 30px;
+  }
 
-    .title-footer {
-        font-size: 25px;
-        margin-bottom: 20px;
-    }
+  .title-footer {
+    font-size: 25px;
+    margin-bottom: 20px;
+  }
 
-    .btn-click-footer {
-        border-radius: 30px;
-        height: 55px;
-        width:330px;
-        font-size: 25px;
-    }
+  .btn-click-footer {
+    border-radius: 30px;
+    height: 55px;
+    width: 330px;
+    font-size: 25px;
+  }
 
-    .derechos-footer {
-        font-size: 15px;
-    }
+  a.derechos-footer {
+    font-size: 15px;
+    text-decoration: none;
+  }
 }

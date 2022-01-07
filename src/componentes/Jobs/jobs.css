@@ -82,7 +82,7 @@
   color: #ffffff;
 }
 
-@media only screen and (max-width: 400px) {
+@media only screen and (max-width: 450px) {
   .jobsContainer {
     padding: 40px 15px 40px 15px;
   }

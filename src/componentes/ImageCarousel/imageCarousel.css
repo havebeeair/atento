@@ -1,0 +1,32 @@
+.container-carousel {
+  background-color: #000c67;
+  height: 800px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.carousel-title {
+  margin-bottom: 40px;
+  font-size: 90px;
+  text-align: center;
+  color: white;
+}
+
+.slider .rsis-container {
+  width: 600px !important;
+}
+
+.slider .rsis-image {
+  width: 600px !important;
+  height: 600px !important;
+}
+
+.slider {
+  display: flex !important;
+  justify-content: center !important;
+}
+
+.slider div {
+  width: 600px !important;
+}

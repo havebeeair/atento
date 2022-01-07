@@ -2,20 +2,22 @@ import "./Contact.css";
 import Mes from "../../resources/iconos/atobot.png";
 import Whatsapp from "../../resources/iconos/whatsapp.png";
 import Phone from "../../resources/iconos/phonenumber.png";
-import Facebook from "../../resources/iconos/facebook.png";
-import Twitter from "../../resources/iconos/twitter.png";
-import Instagram from "../../resources/iconos/instagram.png";
-import Tiktok from "../../resources/iconos/tik-tok.png";
-import Youtube from "../../resources/iconos/youtube.png";
+import Facebook from "../../resources/imagenes/social/facebook.png";
+import Twitter from "../../resources/imagenes/social/twitter.png";
+import Instagram from "../../resources/imagenes/social/instagram.png";
+import Tiktok from "../../resources/imagenes/social/tiktok.png";
+import Youtube from "../../resources/imagenes/social/youtube.png";
 
 function Contactos() {
   return (
     <div className="Contactos">
       <h1 className="titulo-contactos">Contáctanos</h1>
-      <div className="carta-contactos">
-        <img width="70px" src={Mes} alt="atobot" />
-        <div>Atobot</div>
-      </div>
+      <a href="m.me/TalentoAtentoMx">
+        <div className="carta-contactos">
+          <img width="70px" src={Mes} alt="atobot" />
+          <div>Atobot</div>
+        </div>
+      </a>
       <div className="carta-contactos">
         <img width="70px" src={Whatsapp} alt="whatsapp" />
         <div>Whatsapp</div>
@@ -27,11 +29,36 @@ function Contactos() {
       <div className="creando-container">
         <h1 className="titulo-creando">Creando interacciones</h1>
         <div className="iconos-container">
-          <img width="70px" src={Facebook} alt="facebook" />
-          <img className="white" width="70px" src={Twitter} alt="twitter" />
-          <img width="70px" src={Instagram} alt="instagram" />
-          <img width="70px" src={Tiktok} alt="tiktok" />
-          <img width="70px" src={Youtube} alt="youtube" />
+          <a
+            rel="noopener noreferrer"
+            target="_blank"
+            href="https://www.facebook.com/TalentoAtentoMx">
+            <img width="70px" src={Facebook} alt="facebook" />
+          </a>
+          <a
+            rel="noopener noreferrer"
+            target="_blank"
+            href="https://twitter.com/TalentoAtentoMx">
+            <img className="white" width="70px" src={Twitter} alt="twitter" />
+          </a>
+          <a
+            rel="noopener noreferrer"
+            target="_blank"
+            href="https://www.instagram.com/talentoatentomx/">
+            <img width="70px" src={Instagram} alt="instagram" />
+          </a>
+          <a
+            rel="noopener noreferrer"
+            target="_blank"
+            href="https://www.tiktok.com/@talentoatentomx?lang=es">
+            <img width="70px" src={Tiktok} alt="tiktok" />
+          </a>
+          <a
+            rel="noopener noreferrer"
+            target="_blank"
+            href="https://www.youtube.com/channel/UCncbc_yyiqVYI_AaIy84LNw">
+            <img width="70px" src={Youtube} alt="youtube" />
+          </a>
         </div>
       </div>
     </div>

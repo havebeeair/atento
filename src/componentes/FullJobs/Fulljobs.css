@@ -1,110 +1,142 @@
 .CC-fulljobs {
-    display: flex;
-    justify-content: center;
-    align-content: center;
-    background-color: #e4e4e4;
-    padding: 20px;
-  }
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  background-color: #e4e4e4;
+  padding: 20px;
+  flex-direction: column;
+}
 
+.fulljobs-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.fulljobs-buscador {
+  height: 80px;
+  margin-bottom: 40px;
+}
+
+.fulljobs-image {
+  height: 150px;
+}
+
+.css-1s2u09g-control {
+  border-color: #e4e4e4 !important;
+}
+
+.css-1okebmr-indicatorSeparator {
+  width: 0px !important;
+}
+
+.fulljobs-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 400px;
+  height: 400px;
+  background-color: white;
+  margin: 15px;
+  border-radius: 15px;
+}
+
+.fj-img-card {
+  width: 400px;
+  height: 150px;
+  border-radius: 15px;
+  object-fit: contain;
+}
+
+.text-card-container {
+  display: flex;
+  flex-direction: column;
+  padding: 15px;
+  margin-left: 10px;
+  height: 170px;
+  width: 100%;
+  padding: 0 30px;
+}
+
+.title-card-fj {
+  color: #4e4e4e;
+  font-size: 18px;
+  margin-top: 10px;
+}
+
+.city-card-fj {
+  color: #adadad;
+  font-size: 14px;
+  margin-top: 10px;
+  font-weight: 400;
+}
+
+.type-card-fj {
+  color: #0b26f0;
+  font-size: 14px;
+  margin-top: 10px;
+  font-weight: 400;
+}
+
+.btn-card-fj {
+  background-color: #0b26f0;
+  color: white;
+  font-size: 14px;
+  width: 335px;
+  height: 53px;
+  border: none;
+  border-radius: 30px;
+}
+
+.select-city {
+  width: 75%;
+  margin: 0 auto;
+  padding: 10px;
+}
+
+@media screen and (max-width: 450px) {
   .fulljobs-container {
-    display: flex;
-    flex-wrap: wrap;
-    margin-top: 300px;
-    margin-bottom: 300px;
+    margin-top: 90px;
+    margin-bottom: 90px;
+    justify-content: center;
   }
 
   .fulljobs-card {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 400px;
-    height: 400px;
-    background-color: white;
-    margin: 15px;
-    border-radius: 15px;
+    width: 320px;
+    height: 335px;
   }
 
   .fj-img-card {
-    width: 400px;
-    height: 200px;
-    border-radius: 15px;
-    border: lightslategray 1px solid;
+    width: 320px;
+    height: 175px;
+    object-fit: contain;
   }
 
   .text-card-container {
-    display: flex;
-    flex-direction: column;
-    padding: 15px;
-    margin-left: 10px;
+    padding: 24px;
+    height: 110px;
+    height: 140px;
+    margin: 0;
   }
 
   .title-card-fj {
-    color: #4e4e4e;
-    font-size: 18px;
-    margin-top: 10px;
+    font-size: 17px;
+    margin-top: 2px;
   }
 
   .city-card-fj {
-    color: #adadad;
-    font-size: 14px;
-    margin-top: 10px;
+    font-size: 13px;
+    margin-top: 5px;
   }
 
   .type-card-fj {
-    color: #0b26f0;
-    font-size: 14px;
-    margin-top: 10px;
+    font-size: 13px;
+    margin-top: 5px;
   }
 
   .btn-card-fj {
-    background-color: #0b26f0;
-    color: white;
     font-size: 14px;
-    width: 335px;
-    height: 53px;
-    border: none;
-    border-radius: 30px;
+    width: 268px;
+    height: 35px;
   }
-
-  @media screen and (max-width: 400px) {
-    .fulljobs-container {
-      margin-top: 90px;
-      margin-bottom: 90px;
-    }
-
-    .fulljobs-card {
-      width: 320px;
-      height: 320px;
-    }
-
-    .fj-img-card {
-      width: 320px;
-      height: 175px;
-    }
-
-    .text-card-container {
-      padding: 5px;
-      margin-left: 25px;
-    }
-
-    .title-card-fj {
-      font-size: 17px;
-      margin-top: 2px;
-    }
-
-    .city-card-fj {
-      font-size: 13px;
-      margin-top: 5px;
-    }
-
-    .type-card-fj {
-      font-size: 13px;
-      margin-top: 5px;
-    }
-
-    .btn-card-fj {
-      font-size: 14px;
-      width: 268px;
-      height: 42px;
-    }
-  }
+}
