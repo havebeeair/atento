@@ -1,0 +1,151 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.jobsContainer {
+  width: 100%;
+  padding: 50px 20px 100px 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #e4e4e4;
+}
+
+.jobs-title {
+  margin-bottom: 40px;
+  font-size: 90px;
+  text-align: center;
+  color: #f06f0b;
+}
+
+.jobs-card-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  align-content: flex-start;
+}
+
+.jobs-card {
+  width: 450px;
+  height: 170px;
+  margin: 15px;
+  display: flex;
+  background-color: #ffffff;
+  border-radius: 20px;
+}
+
+.jobs-card img {
+  height: 170px;
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
+}
+
+.jobs-card div {
+  padding: 23px 23px 23px 23px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.jobs-card div h3 {
+  font-size: 18px;
+  text-align: left;
+  color: #4e4e4e;
+}
+
+.jobs-card div h5 {
+  font-size: 14px;
+  text-align: left;
+  color: #adadad;
+}
+
+.jobs-card div a {
+  font-size: 14px;
+  text-align: left;
+  text-decoration: none;
+  color: #0b26f0;
+}
+
+.jobs-button {
+  width: 650px;
+  padding: 30px;
+  margin-top: 40px;
+  border-style: none;
+  border-radius: 75px;
+  background-color: #0b26f0;
+  font-size: 40px;
+  font-weight: bold;
+  text-align: center;
+  color: #ffffff;
+}
+
+@media only screen and (max-width: 400px) {
+  .jobsContainer {
+    padding: 40px 15px 40px 15px;
+  }
+
+  .jobs-title {
+    width: 250px;
+    margin-bottom: 20px;
+    font-size: 30px;
+    text-align: center;
+  }
+
+  .jobs-card-container {
+    height: 570px;
+    overflow: auto;
+  }
+
+  ::-webkit-scrollbar {
+    width: 1px;
+    height: 1px;
+  }
+  ::-webkit-scrollbar-thumb {
+    background: #e4e4e4;
+    border-radius: 0px;
+  }
+  ::-webkit-scrollbar-thumb:hover {
+    background: #e4e4e4;
+  }
+  ::-webkit-scrollbar-track {
+    background: #e4e4e4;
+    border-radius: 0px;
+    box-shadow: inset 0px 0px 0px 0px #e4e4e4;
+  }
+
+  .jobs-card {
+    width: 320px;
+    height: 120px;
+    margin: 10px;
+  }
+
+  .jobs-card img {
+    height: 120px;
+  }
+
+  .jobs-card div {
+    padding: 15px 8px 8px 8px;
+  }
+
+  .jobs-card div h3 {
+    font-size: 13px;
+  }
+
+  .jobs-card div h5 {
+    font-size: 11px;
+  }
+
+  .jobs-card div a {
+    font-size: 11px;
+  }
+
+  .jobs-button {
+    width: 320px;
+    padding: 15px;
+    margin-top: 20px;
+    font-size: 18px;
+  }
+}
