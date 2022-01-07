@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/atento/static/css/main.6ad74bc1.css",
-    "main.js": "/atento/static/js/main.163adaf7.js",
+    "main.js": "/atento/static/js/main.145cbda4.js",
     "static/media/whatsapp.png": "/atento/static/media/whatsapp.c826b0165560636baf0b.png",
     "static/media/phonenumber.png": "/atento/static/media/phonenumber.a332b16d6406c3930752.png",
     "static/media/atobot.png": "/atento/static/media/atobot.d960eb9381feea2e1054.png",
@@ -17,10 +17,10 @@
     "index.html": "/atento/index.html",
     "static/media/wave.svg": "/atento/static/media/wave.0e9dc18bbfe4d2967914.svg",
     "main.6ad74bc1.css.map": "/atento/static/css/main.6ad74bc1.css.map",
-    "main.163adaf7.js.map": "/atento/static/js/main.163adaf7.js.map"
+    "main.145cbda4.js.map": "/atento/static/js/main.145cbda4.js.map"
   },
   "entrypoints": [
     "static/css/main.6ad74bc1.css",
-    "static/js/main.163adaf7.js"
+    "static/js/main.145cbda4.js"
   ]
 }
