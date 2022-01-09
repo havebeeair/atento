@@ -28,15 +28,35 @@ function FullJobsCard() {
   const [fulljobs, setFulljobs] = useState([]);
   const [city, setCity] = useState("");
   const [selectedCity, setSelectedCity] = useState("");
+  const [filteredJobs, setFilteredJobs] = useState([]);
+  const [data, setData] = useState([]);
 
   useEffect(() => {
     fetch("https://api2.worcket.com/public/company/opportunitiesbyname/atento")
-      .then(response => response.json())
-      .then(data => {
-        data = data.slice(0, 30);
-        setFulljobs(data);
+      .then((response) => response.json())
+      .then((data) => {
+        let jobsmexico = data.filter((job) => {
+          return job.companyName === "Atento México";
+        });
+        setData(jobsmexico);
       });
   }, []);
+
+  useEffect(() => {
+    if (selectedCity) {
+      let filterCity = data.filter((city) => {
+        if (city.geolocations.length > 0) {
+          return city.geolocations[0].display_name
+            .toLowerCase()
+            .includes(selectedCity.value.toLowerCase());
+        }
+      });
+      console.log();
+      setFilteredJobs(filterCity);
+    } else {
+      setFilteredJobs(data);
+    }
+  }, [selectedCity]);
 
   const values = [
     {
@@ -54,9 +74,9 @@ function FullJobsCard() {
   ];
 
   const ciudades = [
-    { value: "Aguascalientes", label: "AguascalientesBaja" },
+    { value: "Aguascalientes", label: "Aguascalientes" },
     { value: "Baja California", label: "Baja California" },
-    { value: "Baja California Sur", label: "Baja California SurBaja" },
+    { value: "Baja California Sur", label: "Baja California Sur" },
     { value: "Campeche", label: "Campeche" },
     { value: "Coahuila", label: "Coahuila" },
     { value: "Colima", label: "Colima" },
@@ -68,11 +88,10 @@ function FullJobsCard() {
     { value: "Guerrero", label: "Guerrero" },
     { value: "Hidalgo", label: "Hidalgo" },
     { value: "Jalisco", label: "Jalisco" },
-    { value: "México", label: "México" },
     { value: "Michoacán", label: "Michoacán" },
     { value: "Morelos", label: "Morelos" },
     { value: "Nayarit", label: "Nayarit" },
-    { value: "Nuevo León", label: "Nuevo" },
+    { value: "Nuevo León", label: "Nuevo León" },
     { value: "Oaxaca", label: "Oaxaca" },
     { value: "Puebla", label: "Puebla" },
     { value: "Querétaro", label: "Querétaro" },
@@ -88,7 +107,7 @@ function FullJobsCard() {
     { value: "Zacatecas", label: "Zacatecas" },
   ];
 
-  const mappedCiudades = ciudades.map(ciudad => {
+  const mappedCiudades = ciudades.map((ciudad) => {
     return {
       value: ciudad.value.toLowerCase(),
       label: ciudad.label,
@@ -103,7 +122,7 @@ function FullJobsCard() {
       maxHeight: 200,
       overflow: "hidden",
     }),
-    valueContainer: values => ({
+    valueContainer: (values) => ({
       ...values,
       fontSize: "30px",
       padding: "13px",
@@ -115,55 +134,76 @@ function FullJobsCard() {
 
   return (
     <div className="CC-fulljobs">
-      <div className="fulljobs-buscador">
-        <Select
-          className="select-city"
-          isClearable
-          openMenuOnClick={false}
-          openMenuOnFocus={false}
-          options={mappedCiudades}
-          pageSize={5}
-          placeholder="Buscar"
-          styles={customStyles}
-          value={selectedCity}
-          onChange={setSelectedCity}
-          onInputChange={setCity}
-        />
-      </div>
+      {data.length > 0 && (
+        <div className="fulljobs-buscador">
+          <Select
+            className="select-city"
+            isClearable
+            openMenuOnClick={false}
+            openMenuOnFocus={false}
+            options={mappedCiudades}
+            pageSize={5}
+            placeholder="Buscar"
+            styles={customStyles}
+            value={selectedCity}
+            onChange={setSelectedCity}
+            onInputChange={setCity}
+          />
+        </div>
+      )}
       <div className="fulljobs-container">
-        {fulljobs.length > 0 ? (
-          fulljobs.map(job => {
-            return (
-              <div className="fulljobs-card" key={job.id}>
-                <div className="fulljobs-image">
-                  <img
-                    className="fj-img-card"
-                    width="400px"
-                    src={job.companyLogo}
-                    alt="companyLogo"
-                  />
-                </div>
-                <div className="text-card-container">
-                  <h3 className="title-card-fj">{job.title}</h3>
-                  <h5 className="city-card-fj">
-                    {job.geolocations.length > 0
-                      ? job.geolocations[0].display_name
-                      : null}
-                  </h5>
-                  <h5 className="type-card-fj">
-                    {job.jobType.charAt(0).toUpperCase() + job.jobType.slice(1)}
-                  </h5>
-                </div>
-                <button className="btn-card-fj">APLICAR</button>
-              </div>
-            );
-          })
+        {data.length > 0 ? (
+          selectedCity ? (
+            filteredJobs.length > 0 ? (
+              filteredJobs.map((job) => {
+                return <Vacante job={job} />;
+              })
+            ) : (
+              <h2>No hay coincidencias con su búsqueda</h2>
+            )
+          ) : (
+            data.map((job) => {
+              return <Vacante job={job} />;
+            })
+          )
         ) : (
           <img width="50px" src={Loading} alt="loading" />
-        )}{" "}
+        )}
       </div>
     </div>
   );
 }
 
+function Vacante({ job }) {
+  return (
+    <div className="fulljobs-card" key={job.id}>
+      <div className="fulljobs-image">
+        <img
+          className="fj-img-card"
+          width="400px"
+          src={job.image || job.companyLogo}
+          alt="companyLogo"
+        />
+      </div>
+      <div className="text-card-container">
+        <h3 className="title-card-fj">{job.title}</h3>
+        <h5 className="city-card-fj">
+          {job.geolocations.length > 0
+            ? job.geolocations[0].display_name
+            : null}
+        </h5>
+        <h5 className="type-card-fj">
+          {job.jobType.charAt(0).toUpperCase() + job.jobType.slice(1)}
+        </h5>
+      </div>
+      <a
+        href={`https://apply.worcket.com/?id=${job.id}`}
+        rel="noopener noreferrer"
+        target="_blank"
+      >
+        <button className="btn-card-fj">APLICAR</button>
+      </a>
+    </div>
+  );
+}
 export default FullJobs;
