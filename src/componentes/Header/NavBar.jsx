@@ -5,7 +5,7 @@ function NavBar(props) {
     <>
       <ul className="nav-menu">
         <li>
-          <a href="">Postulate aquí</a>
+          <a href="#trabajos">Postulate aquí</a>
           <div className="red" />
         </li>
         <li>
@@ -13,11 +13,11 @@ function NavBar(props) {
           <div className="blue" />
         </li>
         <li>
-          <a href="">Beneficios</a>
+          <a href="#beneficios">Beneficios</a>
           <div className="yellow" />
         </li>
         <li>
-          <a href="">Contactos</a>
+          <a href="/#contactos">Contactos</a>
           <div className="green" />
         </li>
       </ul>

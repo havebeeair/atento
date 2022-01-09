@@ -10,7 +10,7 @@ const images = [
 
 function ImageCarousel() {
   return (
-    <div className="container-carousel">
+    <div className="container-carousel" id="beneficios">
       <h1 className="carousel-title">Beneficios Exclusivos</h1>
       <div className="slider">
         <SimpleImageSlider
