@@ -26,7 +26,13 @@
 }
 
 .btn-click-footer {
-  background-color: #0b26f0;
+  background-image: linear-gradient(
+    to right,
+    #0b26f0 30%,
+    rgb(9, 123, 211) 51%,
+    #0b26f0 100%
+  );
+  background-size: 250% auto;
   border-radius: 15px;
   height: 60px;
   width: 400px;
@@ -34,6 +40,14 @@
   font-size: 30px;
   border-style: none;
   cursor: pointer;
+  transition: 0.5s;
+  box-shadow: rgba(0, 0, 0, 0.15) 0px 2px 8px;
+}
+
+.btn-click-footer:hover {
+  background-position: right center;
+  color: #fff;
+  text-decoration: none;
 }
 
 .derechos-footer h2 {
@@ -62,7 +76,7 @@ a.derechos-footer h2:active {
   }
 
   .title-footer {
-    font-size: 25px;
+    font-size: 30px;
     margin-bottom: 20px;
   }
 

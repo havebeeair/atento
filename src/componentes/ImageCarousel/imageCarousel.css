@@ -30,3 +30,27 @@
 .slider div {
   width: 600px !important;
 }
+
+@media only screen and (max-width: 450px) {
+  .container-carousel {
+    height: 650px;
+  }
+
+  .carousel-title {
+    margin-bottom: 20px;
+    font-size: 30px;
+  }
+
+  .slider .rsis-container {
+    width: 100% !important;
+  }
+
+  .slider .rsis-image {
+    width: 100% !important;
+    height: 450px !important;
+  }
+
+  .slider div {
+    width: 100% !important;
+  }
+}
