@@ -68,7 +68,7 @@ div.iconos-container img {
   border-radius: 60%;
 }
 
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 450px) {
   .titulo-contactos {
     font-size: 30px;
     margin-bottom: 20px;
@@ -89,7 +89,7 @@ div.iconos-container img {
   }
 
   .titulo-creando {
-    font-size: 24px;
+    font-size: 25px;
     margin-top: 30px;
   }
 

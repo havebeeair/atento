@@ -35,6 +35,7 @@
   display: flex;
   background-color: #ffffff;
   border-radius: 20px;
+  box-shadow: rgba(0, 0, 0, 0.15) 0px 2px 8px;
 }
 
 .jobs-card img {
@@ -75,11 +76,26 @@
   margin-top: 40px;
   border-style: none;
   border-radius: 75px;
-  background-color: #0b26f0;
+  background-image: linear-gradient(
+    to right,
+    #0b26f0 30%,
+    rgb(9, 123, 211) 51%,
+    #0b26f0 100%
+  );
+  background-size: 250% auto;
   font-size: 40px;
   font-weight: bold;
   text-align: center;
   color: #ffffff;
+  box-shadow: rgba(0, 0, 0, 0.15) 0px 2px 8px;
+  transition: 0.5s;
+  cursor: pointer;
+}
+
+.jobs-button:hover {
+  background-position: right center;
+  color: #fff;
+  text-decoration: none;
 }
 
 @media only screen and (max-width: 450px) {
