@@ -39,7 +39,10 @@
   background-color: white;
   margin: 15px;
   border-radius: 15px;
-}
+  box-shadow: 3px 3px 16px -10px rgba(0,0,0,0.63);
+  -webkit-box-shadow: 3px 3px 16px -10px rgba(0,0,0,0.63);
+  -moz-box-shadow: 3px 3px 16px -10px rgba(0,0,0,0.63);
+  }
 
 .fj-img-card {
   width: 400px;
@@ -79,13 +82,29 @@
 }
 
 .btn-card-fj {
-  background-color: #0b26f0;
+  /* background-color: #0b26f0; */
+  background-image: linear-gradient(
+    to right,
+    #0b26f0 30%,
+    rgb(9, 123, 211) 51%,
+    #0b26f0 100%
+  );
+  background-size: 250% auto;
+  box-shadow: rgba(0, 0, 0, 0.15) 0px 2px 8px;
+  transition: 0.5s;
   color: white;
   font-size: 14px;
   width: 335px;
   height: 53px;
   border: none;
   border-radius: 30px;
+  cursor: pointer;
+}
+
+.btn-card-fj:hover {
+background-position: right center;
+color: #fff;
+text-decoration: none;
 }
 
 .select-city {
@@ -99,6 +118,31 @@
     margin-top: 90px;
     margin-bottom: 90px;
     justify-content: center;
+  }
+
+  .fulljobs-buscador {
+    height: 18px;
+    margin-bottom: 15px;
+  }
+
+  .css-6j8wv5-Input {
+    font-size: 15px;
+  }
+
+  .css-14el2xx-placeholder {
+    font-size: 22px;
+  }
+
+  .css-qc6sy-singleValue {
+    font-size: 18px;
+  }
+
+  .css-1pndypt-Input {
+    font-size: 18px !important;
+  }
+
+  .css-b62m3t-container {
+    width: 320px;
   }
 
   .fulljobs-card {
