@@ -11,11 +11,19 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  min-height: 500px;
 }
 
 .fulljobs-buscador {
   height: 80px;
   margin-bottom: 40px;
+  position: relative;
+}
+
+.search {
+  position: absolute;
+  top: 40%;
+  left: 80%;
 }
 
 .fulljobs-image {
@@ -39,16 +47,28 @@
   background-color: white;
   margin: 15px;
   border-radius: 15px;
-  box-shadow: 3px 3px 16px -10px rgba(0,0,0,0.63);
-  -webkit-box-shadow: 3px 3px 16px -10px rgba(0,0,0,0.63);
-  -moz-box-shadow: 3px 3px 16px -10px rgba(0,0,0,0.63);
-  }
+  box-shadow: 3px 3px 16px -10px rgba(0, 0, 0, 0.63);
+  -webkit-box-shadow: 3px 3px 16px -10px rgba(0, 0, 0, 0.63);
+  -moz-box-shadow: 3px 3px 16px -10px rgba(0, 0, 0, 0.63);
+}
+.css-1hb7zxy-IndicatorsContainer {
+  background-color: #e4e4e4 !important;
+  border-bottom: 4px solid white;
+}
+.css-1s2u09g-control {
+  outline: none;
+}
+.css-tj5bde-Svg {
+  fill: blue !important;
+  cursor: pointer;
+  height: 45px !important;
+  width: 45px !important;
+}
 
 .fj-img-card {
   width: 400px;
-  height: 150px;
+  height: 140px;
   border-radius: 15px;
-  object-fit: contain;
 }
 
 .text-card-container {
@@ -102,9 +122,9 @@
 }
 
 .btn-card-fj:hover {
-background-position: right center;
-color: #fff;
-text-decoration: none;
+  background-position: right center;
+  color: #fff;
+  text-decoration: none;
 }
 
 .select-city {

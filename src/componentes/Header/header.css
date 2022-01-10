@@ -42,6 +42,11 @@
   text-align: right;
   text-decoration: none;
   color: #ffffff;
+  cursor: pointer;
+}
+
+.nav-menu li a:hover {
+  text-decoration: underline;
 }
 
 .red {
@@ -73,11 +78,20 @@
   box-shadow: 0px 3px 6px #00000029;
   color: blue;
   font-size: 18px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.mobileMenuButton img {
+  margin-left: 2.5px;
+  cursor: pointer;
 }
 
 .openButton {
-  color: white;
-  background-color: #004579;
+  color: blue;
+  background-color: white;
+  cursor: pointer;
 }
 
 .mobileMenulist {
@@ -86,6 +100,7 @@
   padding: 80px 60px 72px 60px;
   border-radius: 27px;
   background-color: #004579;
+  z-index: 100;
 }
 
 .mobileMenu {
@@ -108,6 +123,11 @@
   text-align: right;
   text-decoration: none;
   color: #ffffff;
+  cursor: pointer;
+}
+
+.mobileMenu li a:hover {
+  text-decoration: underline;
 }
 
 .mobileMenu li div {
@@ -126,6 +146,9 @@
     padding: 10px 15px 10px 15px;
     font-size: 16px;
   }
+  .nav-vacantes {
+    padding: 0;
+  }
 }
 
 @media only screen and (max-width: 450px) {
@@ -142,6 +165,7 @@
     position: absolute;
     top: 25px;
     left: 33%;
+    z-index: 1000;
   }
 
   .mobileMenuButton {

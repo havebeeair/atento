@@ -1,6 +1,5 @@
 import React from "react";
 import "./values.css";
-import Hand from "../../resources/svg/hand.png";
 import accountability from "../../resources/iconos/icon-accountability.svg";
 import agility from "../../resources/iconos/icon-agilidad.svg";
 import integrity from "../../resources/iconos/icon-integridad.svg";

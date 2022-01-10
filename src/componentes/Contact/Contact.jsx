@@ -10,7 +10,7 @@ import Youtube from "../../resources/imagenes/social/youtube.png";
 
 function Contactos() {
   return (
-    <div className="Contactos">
+    <div id="contactos" className="Contactos">
       <h1 className="titulo-contactos" id="contactos">
         Contáctanos
       </h1>
@@ -34,36 +34,31 @@ function Contactos() {
           <a
             rel="noopener noreferrer"
             target="_blank"
-            href="https://www.facebook.com/TalentoAtentoMx"
-          >
+            href="https://www.facebook.com/TalentoAtentoMx">
             <img width="70px" src={Facebook} alt="facebook" />
           </a>
           <a
             rel="noopener noreferrer"
             target="_blank"
-            href="https://twitter.com/TalentoAtentoMx"
-          >
-            <img className="white" width="70px" src={Twitter} alt="twitter" />
+            href="https://twitter.com/TalentoAtentoMx">
+            <img width="70px" src={Twitter} alt="twitter" />
           </a>
           <a
             rel="noopener noreferrer"
             target="_blank"
-            href="https://www.instagram.com/talentoatentomx/"
-          >
+            href="https://www.instagram.com/talentoatentomx/">
             <img width="70px" src={Instagram} alt="instagram" />
           </a>
           <a
             rel="noopener noreferrer"
             target="_blank"
-            href="https://www.tiktok.com/@talentoatentomx?lang=es"
-          >
+            href="https://www.tiktok.com/@talentoatentomx?lang=es">
             <img width="70px" src={Tiktok} alt="tiktok" />
           </a>
           <a
             rel="noopener noreferrer"
             target="_blank"
-            href="https://www.youtube.com/channel/UCncbc_yyiqVYI_AaIy84LNw"
-          >
+            href="https://www.youtube.com/channel/UCncbc_yyiqVYI_AaIy84LNw">
             <img width="70px" src={Youtube} alt="youtube" />
           </a>
         </div>
