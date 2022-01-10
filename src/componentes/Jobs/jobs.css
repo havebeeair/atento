@@ -40,8 +40,10 @@
 
 .jobs-card img {
   height: 170px;
+  width: 170px;
   border-top-left-radius: 20px;
   border-bottom-left-radius: 20px;
+  object-fit: cover;
 }
 
 .jobs-card div {
@@ -52,19 +54,19 @@
 }
 
 .jobs-card div h3 {
-  font-size: 18px;
+  font-size: 17px;
   text-align: left;
   color: #4e4e4e;
 }
 
 .jobs-card div h5 {
-  font-size: 14px;
+  font-size: 13px;
   text-align: left;
   color: #adadad;
 }
 
 .jobs-card div a {
-  font-size: 14px;
+  font-size: 13px;
   text-align: left;
   text-decoration: none;
   color: #0b26f0;
@@ -140,6 +142,7 @@
 
   .jobs-card img {
     height: 120px;
+    width: 120px;
   }
 
   .jobs-card div {
