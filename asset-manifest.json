@@ -1,12 +1,13 @@
 {
   "files": {
-    "main.css": "/atento/static/css/main.6ad74bc1.css",
-    "main.js": "/atento/static/js/main.145cbda4.js",
+    "main.css": "/atento/static/css/main.b61feb30.css",
+    "main.js": "/atento/static/js/main.d2746aec.js",
     "static/media/whatsapp.png": "/atento/static/media/whatsapp.c826b0165560636baf0b.png",
     "static/media/phonenumber.png": "/atento/static/media/phonenumber.a332b16d6406c3930752.png",
+    "static/media/twitter.png": "/atento/static/media/twitter.032995fbaa1e662693e6.png",
     "static/media/atobot.png": "/atento/static/media/atobot.d960eb9381feea2e1054.png",
     "static/media/instagram.png": "/atento/static/media/instagram.eab9114d3d69870cc20c.png",
-    "static/media/twitter.png": "/atento/static/media/twitter.374c13142950b2c0cad1.png",
+    "static/media/Atento-logo-vacante.svg": "/atento/static/media/Atento-logo-vacante.03b6c7553140b8057d007776887d1152.svg",
     "static/media/logo.svg": "/atento/static/media/logo.6afdba82bfceaabec9bbd64c470db98a.svg",
     "static/media/icon-oneteam.svg": "/atento/static/media/icon-oneteam.fa544215ffd41e6b52aa0d93b5950ee6.svg",
     "static/media/icon-integridad.svg": "/atento/static/media/icon-integridad.b5a5f35ab269220a0cb888844905d9aa.svg",
@@ -14,13 +15,15 @@
     "static/media/icon-agilidad.svg": "/atento/static/media/icon-agilidad.ff5ff0d7fa7ccc8c81458dc70fd1c600.svg",
     "static/media/icon-orientacion.svg": "/atento/static/media/icon-orientacion.f13e47efe35016d4dde00e57cb3b7582.svg",
     "static/media/icon-accountability.svg": "/atento/static/media/icon-accountability.59d7c812867a3112c79e7cfbbbda6b17.svg",
+    "static/media/hamburger.svg": "/atento/static/media/hamburger.baa9f4c3fbe556c66f1e94fa3764e49a.svg",
+    "static/media/search.svg": "/atento/static/media/search.8b30c6df8321d5843ea2e0f92329e250.svg",
     "index.html": "/atento/index.html",
     "static/media/wave.svg": "/atento/static/media/wave.0e9dc18bbfe4d2967914.svg",
-    "main.6ad74bc1.css.map": "/atento/static/css/main.6ad74bc1.css.map",
-    "main.145cbda4.js.map": "/atento/static/js/main.145cbda4.js.map"
+    "main.b61feb30.css.map": "/atento/static/css/main.b61feb30.css.map",
+    "main.d2746aec.js.map": "/atento/static/js/main.d2746aec.js.map"
   },
   "entrypoints": [
-    "static/css/main.6ad74bc1.css",
-    "static/js/main.145cbda4.js"
+    "static/css/main.b61feb30.css",
+    "static/js/main.d2746aec.js"
   ]
 }
