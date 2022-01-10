@@ -3,7 +3,7 @@ import Mes from "../../resources/iconos/atobot.png";
 import Whatsapp from "../../resources/iconos/whatsapp.png";
 import Phone from "../../resources/iconos/phonenumber.png";
 import Facebook from "../../resources/imagenes/social/facebook.png";
-import Twitter from "../../resources/imagenes/social/twitter.png";
+import Twitter from "../../resources/iconos/twitter.png";
 import Instagram from "../../resources/imagenes/social/instagram.png";
 import Tiktok from "../../resources/imagenes/social/tiktok.png";
 import Youtube from "../../resources/imagenes/social/youtube.png";
@@ -14,7 +14,7 @@ function Contactos() {
       <h1 className="titulo-contactos" id="contactos">
         Contáctanos
       </h1>
-      <a href="m.me/TalentoAtentoMx">
+      <a className="nounderline" href="m.me/TalentoAtentoMx">
         <div className="carta-contactos">
           <img width="70px" src={Mes} alt="atobot" />
           <div>Atobot</div>

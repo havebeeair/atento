@@ -12,8 +12,9 @@ function Footer() {
       <a
         rel="noopener noreferrer"
         target="_blank"
-        className="derechos-footer"
-        href="https://atento.com/es/politica-de-privacidad/">
+        className="derechos-footer nounderline"
+        href="https://atento.com/es/politica-de-privacidad/"
+      >
         <h2>Derechos reservados 2021</h2>
       </a>
     </div>
