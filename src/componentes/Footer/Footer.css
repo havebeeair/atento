@@ -63,7 +63,7 @@ a.derechos-footer h2:active {
   text-decoration: none;
 }
 
-@media screen and (max-width: 450px) {
+@media screen and (max-width: 650px) {
   .footer {
     background-size: 300%;
     background-position-y: 70%;

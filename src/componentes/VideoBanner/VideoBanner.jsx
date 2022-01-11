@@ -1,5 +1,7 @@
 import React from "react";
 import "./videoBanner.css";
+import { Link } from "react-router-dom";
+import "../Jobs/jobs.css";
 
 function VideoBanner(props) {
   return (
@@ -12,6 +14,11 @@ function VideoBanner(props) {
         title="YouTube video player"
         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
         allowFullScreen></iframe>
+      <span className="floating-btn">
+        <Link to="/vacantes">
+          <button className="jobs-button">Conoce nuestras vacantes</button>
+        </Link>
+      </span>
     </div>
   );
 }

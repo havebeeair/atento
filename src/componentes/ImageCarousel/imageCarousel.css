@@ -31,7 +31,7 @@
   width: 600px !important;
 }
 
-@media only screen and (max-width: 450px) {
+@media only screen and (max-width: 650px) {
   .container-carousel {
     height: 650px;
   }

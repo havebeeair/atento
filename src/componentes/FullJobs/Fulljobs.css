@@ -133,7 +133,22 @@
   padding: 10px;
 }
 
-@media screen and (max-width: 450px) {
+.jobs-header h3 {
+  font-size: 20px;
+}
+.jobs-header h2 {
+  font-size: 28px;
+}
+
+.jobs-header-container {
+  width: 100%;
+}
+
+.css-14el2xx-placeholder {
+  font-size: 20px !important;
+}
+
+@media screen and (max-width: 650px) {
   .fulljobs-container {
     margin-top: 90px;
     margin-bottom: 90px;
@@ -202,5 +217,23 @@
     font-size: 14px;
     width: 268px;
     height: 35px;
+  }
+
+  .logo-jobs {
+    width: 65px;
+  }
+
+  .jobs-header h3 {
+    font-size: 16px;
+  }
+  .jobs-header h2 {
+    font-size: 20px;
+  }
+  .jobs-header-container {
+    width: 80%;
+  }
+
+  .css-14el2xx-placeholder {
+    font-size: 15px !important;
   }
 }

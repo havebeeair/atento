@@ -9,11 +9,11 @@ function Header(props) {
 
   return (
     <div className="header-container">
+      <MobileMenu open={open} setOpen={setOpen} />
       <div className="atento-title">
         <img src={Logo} alt="Atento logo" />
       </div>
       <NavBar />
-      <MobileMenu open={open} setOpen={setOpen} />
     </div>
   );
 }

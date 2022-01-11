@@ -18,7 +18,7 @@ function ImageCarousel() {
           height={504}
           images={images}
           showBullets={true}
-          showNavs={false}
+          showNavs={true}
         />
       </div>
     </div>

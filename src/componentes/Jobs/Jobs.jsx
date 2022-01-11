@@ -12,15 +12,15 @@ function Jobs(props) {
       "https://api2.worcket.com/public/company/opportunitiesbyname/atento"
     );
     petition
-      .then((response) => {
+      .then(response => {
         return response.json();
       })
-      .then((data) => {
-        let jobsMexico = data.filter((job) => {
+      .then(data => {
+        let jobsMexico = data.filter(job => {
           return job.companyName === "Atento México";
         });
 
-        jobsMexico = jobsMexico.slice(0, 8);
+        jobsMexico = jobsMexico.slice(0, 9);
         setJobs(jobsMexico);
       });
   }, []);
@@ -30,7 +30,7 @@ function Jobs(props) {
       <h1 className="jobs-title">Trabaja con nosotros</h1>
       <div className="jobs-card-container">
         {jobs.length > 0 ? (
-          jobs.map((job) => (
+          jobs.map(job => (
             <JobsCard
               id={job.id}
               img={job.image}

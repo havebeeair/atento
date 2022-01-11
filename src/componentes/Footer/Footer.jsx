@@ -1,6 +1,8 @@
 import "./Footer.css";
 
 function Footer() {
+  const year = new Date().getFullYear();
+
   return (
     <div className="footer">
       <div className="container">
@@ -13,9 +15,8 @@ function Footer() {
         rel="noopener noreferrer"
         target="_blank"
         className="derechos-footer nounderline"
-        href="https://atento.com/es/politica-de-privacidad/"
-      >
-        <h2>Derechos reservados 2021</h2>
+        href="https://atento.com/es/politica-de-privacidad/">
+        <h2>Derechos reservados {`${year}`}</h2>
       </a>
     </div>
   );

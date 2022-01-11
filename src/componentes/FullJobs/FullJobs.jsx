@@ -148,7 +148,7 @@ function FullJobsCard() {
             openMenuOnFocus={false}
             options={mappedCiudades}
             pageSize={5}
-            placeholder="Buscar"
+            placeholder="Buscar vacantes por estado"
             styles={customStyles}
             value={selectedCity}
             onChange={setSelectedCity}
@@ -229,22 +229,25 @@ function FullJobsHeader() {
     display: "flex",
     justifyContent: "center",
     alignItems: "center",
-    width: "66%",
     textAlign: "center",
   };
   return (
     <div className="header-container">
+      <MobileMenu open={open} setOpen={setOpen} />
       <div className="atento-title" style={styles}>
         <Link to="/">
-          <img src={AtentoLogoVacante} alt="Atento logo" />
+          <img
+            className="logo-jobs"
+            src={AtentoLogoVacante}
+            alt="Atento logo"
+          />
         </Link>
-        <div style={center}>
-          <div>
+        <div className="jobs-header-container" style={center}>
+          <div className="jobs-header">
             <h3>
               Encuentra <span style={plus}>+</span>
             </h3>
             <h2>de lo que buscas!</h2>
-            <MobileMenu open={open} setOpen={setOpen} />
           </div>
         </div>
       </div>

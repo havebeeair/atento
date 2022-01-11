@@ -1,4 +1,12 @@
 .video-banner-container {
   height: 600px;
   background-color: lightblue;
+  position: relative;
+}
+
+.floating-btn {
+  position: absolute;
+  top: 80%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }

@@ -73,8 +73,8 @@
 }
 
 .jobs-button {
-  width: 650px;
-  padding: 30px;
+  width: 420px;
+  padding: 15px;
   margin-top: 40px;
   border-style: none;
   border-radius: 75px;
@@ -85,7 +85,7 @@
     #0b26f0 100%
   );
   background-size: 250% auto;
-  font-size: 40px;
+  font-size: 25px;
   font-weight: bold;
   text-align: center;
   color: #ffffff;
@@ -100,7 +100,7 @@
   text-decoration: none;
 }
 
-@media only screen and (max-width: 450px) {
+@media only screen and (max-width: 650px) {
   .jobsContainer {
     padding: 40px 15px 40px 15px;
   }

@@ -73,7 +73,7 @@ div.iconos-container img {
   border: 2px solid #41a1f2;
 }
 
-@media screen and (max-width: 450px) {
+@media screen and (max-width: 650px) {
   .titulo-contactos {
     font-size: 30px;
     margin-bottom: 20px;
