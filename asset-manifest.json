@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/atento/static/css/main.fd3edf17.css",
+    "main.css": "/atento/static/css/main.c578382e.css",
     "main.js": "/atento/static/js/main.8dcbc000.js",
     "static/media/whatsapp.png": "/atento/static/media/whatsapp.c826b0165560636baf0b.png",
     "static/media/phonenumber.png": "/atento/static/media/phonenumber.a332b16d6406c3930752.png",
@@ -19,11 +19,11 @@
     "static/media/search.svg": "/atento/static/media/search.8b30c6df8321d5843ea2e0f92329e250.svg",
     "index.html": "/atento/index.html",
     "static/media/wave.svg": "/atento/static/media/wave.0e9dc18bbfe4d2967914.svg",
-    "main.fd3edf17.css.map": "/atento/static/css/main.fd3edf17.css.map",
+    "main.c578382e.css.map": "/atento/static/css/main.c578382e.css.map",
     "main.8dcbc000.js.map": "/atento/static/js/main.8dcbc000.js.map"
   },
   "entrypoints": [
-    "static/css/main.fd3edf17.css",
+    "static/css/main.c578382e.css",
     "static/js/main.8dcbc000.js"
   ]
 }
