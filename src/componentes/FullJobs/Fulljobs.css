@@ -187,8 +187,7 @@
 
   .fj-img-card {
     width: 320px;
-    height: 175px;
-    object-fit: contain;
+    height: 110px;
   }
 
   .text-card-container {
@@ -230,7 +229,7 @@
     font-size: 20px;
   }
   .jobs-header-container {
-    width: 80%;
+    width: 70%;
   }
 
   .css-14el2xx-placeholder {
