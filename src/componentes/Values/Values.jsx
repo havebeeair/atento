@@ -13,6 +13,7 @@ function Values(props) {
         <h1 className="values-title">Nuestros valores</h1>
       </div>
       <div className="values-card-container">
+      <div className="two-pack-container">
         <div className="values-card">
           <img height="130px" height="130px" src={agility} alt="" />
           <div>Agilidad</div>
@@ -23,6 +24,8 @@ function Values(props) {
           <div>Integridad</div>
           <p>Demostremos honestidad, transparencia y respeto en todo.</p>
         </div>
+      </div>
+      <div className="two-pack-container">
         <div className="values-card">
           <img height="130px" src={integrity} alt="" />
           <div>Accountability</div>
@@ -33,6 +36,8 @@ function Values(props) {
           <div>Orientación</div>
           <p>El cliente está en el centro de todo lo que hacemos</p>
         </div>
+      </div>
+
       </div>
       <div>
         <div className="values-card bottom-card">

@@ -1,6 +1,6 @@
 .container-carousel {
   background-color: #000c67;
-  height: 800px;
+  height: 850px;
   display: flex;
   justify-content: center;
   flex-direction: column;
@@ -47,7 +47,7 @@
 
   .slider .rsis-image {
     width: 100% !important;
-    height: 450px !important;
+    height: 395px !important;
   }
 
   .slider div {

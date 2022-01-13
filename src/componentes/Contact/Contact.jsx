@@ -6,7 +6,7 @@ import Facebook from "../../resources/imagenes/social/facebook.png";
 import Twitter from "../../resources/iconos/twitter.png";
 import Instagram from "../../resources/imagenes/social/instagram.png";
 import Tiktok from "../../resources/imagenes/social/tiktok.png";
-import Youtube from "../../resources/imagenes/social/youtube.png";
+import Linkedin from "../../resources/iconos/linkedin.png";
 
 function Contactos() {
   return (
@@ -30,6 +30,7 @@ function Contactos() {
       </div>
       <div className="creando-container">
         <h1 className="titulo-creando">Creando interacciones</h1>
+        <h3>¡Síguenos en nuestras redes sociales oficiales!</h3>
         <div className="iconos-container">
           <a
             rel="noopener noreferrer"
@@ -58,8 +59,8 @@ function Contactos() {
           <a
             rel="noopener noreferrer"
             target="_blank"
-            href="https://www.youtube.com/channel/UCncbc_yyiqVYI_AaIy84LNw">
-            <img width="70px" src={Youtube} alt="youtube" />
+            href="https://www.linkedin.com/company/atento-m-xico/">
+            <img width="70px" src={Linkedin} alt="linkedin" />
           </a>
         </div>
       </div>
