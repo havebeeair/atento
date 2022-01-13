@@ -10,6 +10,8 @@
   color: white;
   font-size: 70px;
   margin-top: 20px;
+  font-family: "OmnesBold";
+
 }
 
 .nounderline {
@@ -51,7 +53,7 @@ div.carta-contactos img {
 
 .titulo-creando {
   color: white;
-  font-size: 60px;
+  font-size: 40px;
   margin: 15px;
 }
 

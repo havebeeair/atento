@@ -29,8 +29,7 @@ function Contactos() {
         <div>800-214-1010</div>
       </div>
       <div className="creando-container">
-        <h1 className="titulo-creando">Creando interacciones</h1>
-        <h3>¡Síguenos en nuestras redes sociales oficiales!</h3>
+        <h3 className="titulo-creando">¡Síguenos en nuestras redes sociales oficiales!</h3>
         <div className="iconos-container">
           <a
             rel="noopener noreferrer"

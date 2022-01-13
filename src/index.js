@@ -3,6 +3,8 @@ import ReactDOM from "react-dom";
 import "./index.css";
 import App from "./App";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
+import "./resources/fonts/Omnes-Bold.otf"
+import "./resources/fonts/Omnes-Regular.otf"
 
 import { HashRouter } from "react-router-dom";
 

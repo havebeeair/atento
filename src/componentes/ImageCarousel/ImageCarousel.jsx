@@ -3,9 +3,11 @@ import SimpleImageSlider from "react-simple-image-slider";
 import "./imageCarousel.css";
 
 const images = [
-  { url: "./img/3.png" },
-  { url: "img/2.png" },
   { url: "img/1.png" },
+  { url: "img/5.png" },
+  { url: "img/4.png" },
+  { url: "img/3.png" },
+  { url: "img/2.png" },
 ];
 
 function ImageCarousel() {

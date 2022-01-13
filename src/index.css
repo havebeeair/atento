@@ -11,3 +11,14 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+@font-face {
+  font-family: "OmnesRegular";
+  src: url("./resources/fonts/Omnes-Regular.otf");
+  font-weight: normal;
+}
+@font-face {
+  font-family: "OmnesBold";
+  src: url("./resources/fonts/Omnes-Bold.otf");
+  font-weight: bold;
+}

@@ -1,6 +1,3 @@
-/* CSS de componente Values */
-@import url("https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@700&display=swap");
-
 .values-container {
   width: 100%;
   display: flex;
@@ -17,6 +14,8 @@
   font-size: 90px;
   text-align: center;
   color: #0b26f0;
+  font-family: "OmnesBold";
+
 }
 
 .values-card-container {
@@ -59,7 +58,7 @@
 }
 
 .bottom-card {
-  width: 650px;
+  width: 610px;
   height: 323px;
   margin: 5px 0px 0px 0px;
 }
