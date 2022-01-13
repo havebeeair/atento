@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/atento/static/css/main.cbefa391.css",
+    "main.css": "/atento/static/css/main.58b961ed.css",
     "main.js": "/atento/static/js/main.e716285e.js",
     "static/media/Omnes-Bold.otf": "/atento/static/media/Omnes-Bold.a9794d1343721d18cbea.otf",
     "static/media/Omnes-Regular.otf": "/atento/static/media/Omnes-Regular.99000b5595bd10a3c37d.otf",
@@ -21,11 +21,11 @@
     "static/media/search.svg": "/atento/static/media/search.8b30c6df8321d5843ea2e0f92329e250.svg",
     "index.html": "/atento/index.html",
     "static/media/wave.svg": "/atento/static/media/wave.0e9dc18bbfe4d2967914.svg",
-    "main.cbefa391.css.map": "/atento/static/css/main.cbefa391.css.map",
+    "main.58b961ed.css.map": "/atento/static/css/main.58b961ed.css.map",
     "main.e716285e.js.map": "/atento/static/js/main.e716285e.js.map"
   },
   "entrypoints": [
-    "static/css/main.cbefa391.css",
+    "static/css/main.58b961ed.css",
     "static/js/main.e716285e.js"
   ]
 }
