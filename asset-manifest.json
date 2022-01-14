@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/atento/static/css/main.fc71d8fe.css",
-    "main.js": "/atento/static/js/main.1a5ce661.js",
+    "main.js": "/atento/static/js/main.3a57f527.js",
     "static/media/Omnes-Bold.otf": "/atento/static/media/Omnes-Bold.a9794d1343721d18cbea.otf",
     "static/media/Omnes-Regular.otf": "/atento/static/media/Omnes-Regular.99000b5595bd10a3c37d.otf",
     "static/media/whatsapp.png": "/atento/static/media/whatsapp.c826b0165560636baf0b.png",
@@ -22,10 +22,10 @@
     "index.html": "/atento/index.html",
     "static/media/wave.svg": "/atento/static/media/wave.0e9dc18bbfe4d2967914.svg",
     "main.fc71d8fe.css.map": "/atento/static/css/main.fc71d8fe.css.map",
-    "main.1a5ce661.js.map": "/atento/static/js/main.1a5ce661.js.map"
+    "main.3a57f527.js.map": "/atento/static/js/main.3a57f527.js.map"
   },
   "entrypoints": [
     "static/css/main.fc71d8fe.css",
-    "static/js/main.1a5ce661.js"
+    "static/js/main.3a57f527.js"
   ]
 }
