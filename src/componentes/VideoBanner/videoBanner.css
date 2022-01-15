@@ -2,6 +2,7 @@
   height: 600px;
   background-color: lightblue;
   position: relative;
+  z-index: 0;
 }
 
 .floating-btn {
