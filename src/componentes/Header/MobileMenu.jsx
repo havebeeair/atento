@@ -1,4 +1,5 @@
 import React from "react";
+import { createPortal } from "react-dom";
 import hamburger from "../../resources/iconos/hamburger.svg";
 import { Link as ScrollLink } from "react-scroll";
 import { Link } from "react-router-dom";
@@ -7,7 +8,7 @@ function MobileMenu({ open, setOpen }) {
   const handlerClick = () => {
     setOpen(!open);
   };
-  return (
+  return createPortal(
     <div className="mobileMenuContainer" id="burger">
       <button
         className={open ? "mobileMenuButton openButton" : "mobileMenuButton"}
@@ -44,7 +45,8 @@ function MobileMenu({ open, setOpen }) {
           </ul>
         </div>
       )}
-    </div>
+    </div>,
+    document.getElementById("mobileMenuPortal")
   );
 }
 

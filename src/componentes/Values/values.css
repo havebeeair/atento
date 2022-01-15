@@ -22,14 +22,15 @@
   width: 100%;
   padding: 0px 40px 0px 40px;
   display: flex;
-  justify-content: center;
+  justify-content: space-evenly;
   align-content: flex-start;
+  flex-wrap: wrap;
 }
 
 .values-card {
-  width: 270px;
-  height: 436px;
-  margin: 10px 35px 10px 35px;
+  width: 200px;
+  height: 400px;
+  margin: 10px 10px 10px 10px;
   padding: 35px 20px 35px 20px;
   display: flex;
   flex-direction: column;
@@ -45,7 +46,7 @@
   width: 100%;
   margin: 40px 0px 20px 0px;
   font-weight: bold;
-  font-size: 30px;
+  font-size: 25px;
   text-align: center;
   color: #4e4e4e;
 }
@@ -58,17 +59,21 @@
 }
 
 .bottom-card {
-  width: 610px;
-  height: 323px;
+  width: 479px;
+  height: 240px;
   margin: 5px 0px 0px 0px;
 }
 
 .bottom-card div {
   margin: 5px 0px 12px 0px;
-  font-size: 40px;
+    font-size: 25px;
+
 }
 
-/* media query 400px */
+.two-pack-container {
+  display: flex;
+}
+
 @media only screen and (max-width: 650px) {
   .values-container {
     justify-content: space-between;
@@ -109,10 +114,11 @@
   }
 
   .bottom-card {
-    width: 340px;
-    height: 171px;
-    margin: 10px;
-    padding: 20px 10px 12px 10px;
+    width: 240px;
+    height: 350px;
+    margin: 10px 5px 10px 5px;
+    padding: 20px 10px 20px 10px;
+    font-size: 25px;
   }
 
   .bottom-card div {
@@ -122,16 +128,32 @@
 
   .two-pack-container {
     display: flex;
-    flex-direction: column;
+    /* flex-direction: column; */
     justify-content: center;
     align-items: center;
   }
 
-  .bottom-card{
-    width: 240px;
-    height: 350px;
-    margin: 10px 5px 10px 5px;
-    padding: 20px 10px 20px 10px;
-    font-size: 25px;
+}
+
+@media only screen and (max-width: 550px) {
+
+  .values-card {
+    width: 170px;
+    font-size: 13px;
+    height: 263px;
+  }
+
+  .values-card p {
+    font-size: 15px;
+  }
+
+  .values-card div {
+    font-size: 20px;
+  }
+
+  .bottom-card {
+    width: 170px;
+    font-size: 13px;
+    height: 263px;
   }
 }

@@ -17,12 +17,12 @@ function Contactos() {
       <a className="nounderline" href="m.me/TalentoAtentoMx">
         <div className="carta-contactos">
           <img width="70px" src={Mes} alt="atobot" />
-          <div>Atobot</div>
+          <div>AtoBot</div>
         </div>
       </a>
       <div className="carta-contactos">
         <img width="70px" src={Whatsapp} alt="whatsapp" />
-        <div>Whatsapp</div>
+        <div>WhatsApp</div>
       </div>
       <div className="carta-contactos">
         <img className="orange" width="70px" src={Phone} alt="phone number" />

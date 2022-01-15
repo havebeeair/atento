@@ -33,6 +33,10 @@
   margin: 10px;
 }
 
+.carta-contactos div {
+  padding-top: 4px;
+}
+
 .orange {
   background-color: #eb6215;
   border-radius: 10px;
@@ -55,6 +59,7 @@ div.carta-contactos img {
   color: white;
   font-size: 40px;
   margin: 15px;
+  text-align: center;
 }
 
 .iconos-container {
