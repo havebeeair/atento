@@ -11,12 +11,13 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  background: radial-gradient(
+  /* background: radial-gradient(
     circle,
     rgba(0, 69, 121, 0.9752275910364145) 0%,
     rgba(0, 18, 61, 1) 100%,
     rgba(0, 35, 61, 1) 100%
-  );
+  ); */
+  background-image: url("../../resources/iconos/pattern.svg");
   position: relative;
 }
 

@@ -5,6 +5,7 @@ import Footer from "../../componentes/Footer/Footer";
 import Loading from "../../resources/svg/loading.svg";
 import Search from "../../resources/iconos/search.svg";
 import AtentoLogoVacante from "../../resources/iconos/Atento-logo-vacante.svg";
+import AtentoLogo from "../../resources/iconos/nuevologo.svg";
 import Select from "react-select";
 import MobileMenu from "../Header/MobileMenu";
 import "../Header/header.css";
@@ -112,10 +113,23 @@ function FullJobsCard() {
     { value: "Zacatecas", label: "Zacatecas" },
   ];
 
+  const trabajos = [
+    { value: "Trabajo A", label: "Trabajo A" },
+    { value: "Trabajo B", label: "Trabajo B" },
+    { value: "Trabajo C", label: "Trabajo C" },
+    { value: "Trabajo D", label: "Trabajo D" },
+  ];
+
   const mappedCiudades = ciudades.map(ciudad => {
     return {
       value: ciudad.value.toLowerCase(),
       label: ciudad.label,
+    };
+  });
+  const mappedTrabajos = trabajos.map(trabajo => {
+    return {
+      value: trabajo.value.toLowerCase(),
+      label: trabajo.label,
     };
   });
 
@@ -140,24 +154,42 @@ function FullJobsCard() {
   return (
     <div className="CC-fulljobs">
       {data.length > 0 && (
-        <div className="fulljobs-buscador">
-          <Select
-            className="select-city"
-            isClearable
-            openMenuOnClick={false}
-            openMenuOnFocus={false}
-            options={mappedCiudades}
-            pageSize={5}
-            placeholder="Buscar vacantes por estado"
-            styles={customStyles}
-            value={selectedCity}
-            onChange={setSelectedCity}
-            onInputChange={setCity}
-          />
-          {!selectedCity && (
-            <img className="search" height="40px" src={Search} alt="search" />
-          )}
-        </div>
+        <>
+          <div className="fulljobs-buscador">
+            <Select
+              className="select-city"
+              isClearable
+              openMenuOnClick={false}
+              openMenuOnFocus={false}
+              options={mappedCiudades}
+              pageSize={5}
+              placeholder="Buscar vacantes por estado"
+              styles={customStyles}
+              value={selectedCity}
+              onChange={setSelectedCity}
+              onInputChange={setCity}
+            />
+            {!selectedCity && (
+              <img className="search" height="40px" src={Search} alt="search" />
+            )}
+          </div>
+          <div className="fulljobs-buscador">
+            <Select
+              className="select-city"
+              isClearable
+              openMenuOnClick={false}
+              openMenuOnFocus={false}
+              options={mappedTrabajos}
+              pageSize={5}
+              placeholder="Buscar vacantes por tipo de trabajo"
+              styles={customStyles}
+              value={selectedCity}
+            />
+            {!selectedCity && (
+              <img className="search" height="40px" src={Search} alt="search" />
+            )}
+          </div>
+        </>
       )}
       <div className="fulljobs-container">
         {data.length > 0 ? (
@@ -236,20 +268,16 @@ function FullJobsHeader() {
       <MobileMenu open={open} setOpen={setOpen} />
       <div className="atento-title" style={styles}>
         <Link to="/">
-          <img
-            className="logo-jobs"
-            src={AtentoLogoVacante}
-            alt="Atento logo"
-          />
+          <img className="logo-jobs" src={AtentoLogo} alt="Atento logo" />
         </Link>
-        <div className="jobs-header-container" style={center}>
+        {/* <div className="jobs-header-container" style={center}>
           <div className="jobs-header">
             <h3>
               Encuentra <span style={plus}>+</span>
             </h3>
             <h2>de lo que buscas!</h2>
           </div>
-        </div>
+        </div> */}
       </div>
     </div>
   );
